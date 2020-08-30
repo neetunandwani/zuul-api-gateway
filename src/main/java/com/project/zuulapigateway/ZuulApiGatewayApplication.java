@@ -16,6 +16,7 @@ public class ZuulApiGatewayApplication {
 		SpringApplication.run(ZuulApiGatewayApplication.class, args);
 	}
 
+	//spring cloud sleuth configuration for distributed tracing
 	@Bean
 	public Sampler defaultSampler(){
 		return Sampler.ALWAYS_SAMPLE;
